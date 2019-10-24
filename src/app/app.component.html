@@ -1,1 +1,22 @@
-<button mat-raised-button color="primary">Hello World</button>
+<mat-toolbar color="primary" class="navbar">
+  <div>MovieClub</div>
+  <div>
+    <span>Home</span>
+    <span>Order Online</span>
+    <span (click)="OnClickContact()">Contact</span>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <button mat-flat-button (click)="onClickComedy()">Comedy</button>
+    <button mat-flat-button (click)="onClickDrama()">Drama</button>
+    <button mat-flat-button (click)="onClickAction()">Action</button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <p>{{titleDes}}</p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<br>

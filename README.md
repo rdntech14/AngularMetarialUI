@@ -12,17 +12,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2) Add Material class in app.component.html
 `<button mat-button>Hello World</button>`
 
-## How to use Angualr Material / Import all module at once 
+## How to use Angualr Material / Import all angular material modules at once 
 
 1) create a module using command `ng g m material` where all the material modules can be imported. Here `material` is just a name of a module where all material modules need to be listed.
+
 2) Open `material.module.ts` and remove CommonModule from import array and add export array too.
+
 3) Add all Material Modules that going to be used
+
 4) Import Material Module in app.modules.ts
-
-
-
-
-
-
-
-
